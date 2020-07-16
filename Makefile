@@ -95,7 +95,7 @@ IMPLS = ada ada.2 awk bash basic bbc-basic c chuck clojure coffee common-lisp cp
 	matlab miniMAL nasm nim objc objpascal ocaml perl perl6 php picolisp pike plpgsql \
 	plsql powershell ps python python.2 r racket rexx rpython ruby rust scala scheme skew \
 	swift swift3 swift4 swift5 tcl ts vala vb vhdl vimscript wasm wren yorick xslt zig \
-	pm-rust pm-c pm-cpp
+	pm-rust pm-c pm-cpp pm-js
 
 EXTENSION = .mal
 
@@ -274,6 +274,7 @@ zig_STEP_TO_PROG =           impls/zig/$($(1))
 pm-rust_STEP_TO_PROG =       impls/pm-rust/$($(1))
 pm-c_STEP_TO_PROG =          impls/pm-c/$($(1))
 pm-cpp_STEP_TO_PROG =        impls/pm-cpp/$($(1))
+pm-js_STEP_TO_PROG =         impls/pm-js/$($(1)).js
 
 #
 # General settings and utility functions
