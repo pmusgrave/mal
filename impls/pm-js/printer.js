@@ -21,10 +21,11 @@ function pr_str(input) {
             out_str = out_str.concat(pr_str(input.value[i])) + " ";
         }
         return out_str
-            .replace(/\(\s+/g, '(')
             .replace(/\s+\(/g, ' (')
+            .replace(/^\s+\(/g, '( ')
             .replace(/\s+\)/g, ')')
-            .replace(/\)\s+/g, ') ');
+            .replace(/\)\s+/g, ') ')
+            .replace(/\(\s+/g, '(')
     case "EOF":
         return "EOF";
     default:
