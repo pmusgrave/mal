@@ -1,0 +1,484 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200717.131110.5703.0.001.json",
+    "dumpEventTime": "2020-07-17T13:11:10Z",
+    "dumpEventTimeStamp": "1595005870028",
+    "processId": 5703,
+    "cwd": "/home/paul/code/mal",
+    "commandLine": [
+      "node",
+      "impls/pm-js/step1_read_print.js"
+    ],
+    "nodejsVersion": "v12.14.0",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.14.0",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.14.0/node-v12.14.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.14.0/node-v12.14.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.15.0-106-generic",
+    "osVersion": "#107-Ubuntu SMP Thu Jun 4 11:27:52 UTC 2020",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 4490,
+        "user": 14836600,
+        "nice": 22400,
+        "sys": 4287600,
+        "idle": 906337800,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 4458,
+        "user": 14779400,
+        "nice": 600,
+        "sys": 4275200,
+        "idle": 906593900,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 4421,
+        "user": 14834200,
+        "nice": 700,
+        "sys": 4596400,
+        "idle": 904684900,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 4497,
+        "user": 15314300,
+        "nice": 1400,
+        "sys": 4396200,
+        "idle": 906409800,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 4522,
+        "user": 15062900,
+        "nice": 300,
+        "sys": 4430300,
+        "idle": 906656200,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 4401,
+        "user": 15277700,
+        "nice": 400,
+        "sys": 4309600,
+        "idle": 900754600,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 4453,
+        "user": 14695500,
+        "nice": 8200,
+        "sys": 4232100,
+        "idle": 907168500,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 4465,
+        "user": 15010100,
+        "nice": 26900,
+        "sys": 4774100,
+        "idle": 886813700,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 4398,
+        "user": 15299700,
+        "nice": 20400,
+        "sys": 4306500,
+        "idle": 905381500,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 4563,
+        "user": 10797300,
+        "nice": 1100,
+        "sys": 14766400,
+        "idle": 897245600,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 4589,
+        "user": 14165300,
+        "nice": 800,
+        "sys": 4256300,
+        "idle": 907417200,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 4449,
+        "user": 15094200,
+        "nice": 400,
+        "sys": 4230900,
+        "idle": 906678100,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wlx801f02a2bbb9",
+        "internal": false,
+        "mac": "80:1f:02:a2:bb:b9",
+        "address": "192.168.200.143",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlx801f02a2bbb9",
+        "internal": false,
+        "mac": "80:1f:02:a2:bb:b9",
+        "address": "2600:2b00:7a15:eb00:3420:ed64:a64b:7bb1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlx801f02a2bbb9",
+        "internal": false,
+        "mac": "80:1f:02:a2:bb:b9",
+        "address": "2600:2b00:7a15:eb00::d99b",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlx801f02a2bbb9",
+        "internal": false,
+        "mac": "80:1f:02:a2:bb:b9",
+        "address": "2600:2b00:7a15:eb00:4cae:6fb9:7865:9f1f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlx801f02a2bbb9",
+        "internal": false,
+        "mac": "80:1f:02:a2:bb:b9",
+        "address": "2600:2b00:7a15:eb00:225e:b5c1:5c25:6f4a",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlx801f02a2bbb9",
+        "internal": false,
+        "mac": "80:1f:02:a2:bb:b9",
+        "address": "fe80::777:ae4a:af95:59e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      }
+    ],
+    "host": "paul-desktop"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b04935",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [node]"
+    },
+    {
+      "pc": "0x00000000009db9e3",
+      "symbol": "node::OnFatalError(char const*, char const*) [node]"
+    },
+    {
+      "pc": "0x0000000000b39f1e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000b3a299",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000ce5635",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000cbca60",
+      "symbol": "v8::internal::Factory::NewUninitializedFixedArray(int, v8::internal::AllocationType) [node]"
+    },
+    {
+      "pc": "0x0000000000e26f31",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000e271e0",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000fc8ffb",
+      "symbol": "v8::internal::Runtime_GrowArrayElements(int, unsigned long*, v8::internal::Isolate*) [node]"
+    },
+    {
+      "pc": "0x0000000001374fd9",
+      "symbol": " [node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2723975168,
+    "totalCommittedMemory": 2689219560,
+    "usedMemory": 2688566488,
+    "availableMemory": 16989384,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 32568,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 34816,
+        "capacity": 16759808,
+        "used": 0,
+        "available": 16759808
+      },
+      "old_space": {
+        "memorySize": 2469888,
+        "committedMemory": 1938320,
+        "capacity": 1492512,
+        "used": 1492512,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 183904,
+        "capacity": 163968,
+        "used": 163968,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 528384,
+        "committedMemory": 295616,
+        "capacity": 211760,
+        "used": 211760,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 1784172544,
+        "committedMemory": 1784172544,
+        "capacity": 1784151520,
+        "used": 1784151520,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 902512640,
+        "committedMemory": 902512640,
+        "capacity": 902510880,
+        "used": 902510880,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 2.73644,
+    "kernelCpuSeconds": 0.519883,
+    "cpuConsumptionPercent": 65.1265,
+    "maxRss": 2720788480,
+    "pageFaults": {
+      "IORequired": 0,
+      "IONotRequired": 663414
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 24
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 2.46211,
+    "kernelCpuSeconds": 0.518127,
+    "cpuConsumptionPercent": 59.6047,
+    "fsActivity": {
+      "reads": 0,
+      "writes": 24
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "CONDA_SHLVL": "0",
+    "NVM_DIR": "/home/paul/.nvm",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=30;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "CONDA_EXE": "/home/paul/anaconda3/bin/conda",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "KIGITHUB": "https://github.com/KiCad",
+    "LANG": "en_US.UTF-8",
+    "DISPLAY": ":1",
+    "COLORTERM": "rxvt-xpm",
+    "NVM_CD_FLAGS": "",
+    "USERNAME": "paul",
+    "XDG_VTNR": "2",
+    "KICAD_PATH": "/usr/share/kicad",
+    "SSH_AUTH_SOCK": "/tmp/ssh-CSancWkUfQhZ/agent.1746",
+    "MANDATORY_PATH": "/usr/share/gconf/i3.mandatory.path",
+    "S_COLORS": "auto",
+    "_CE_M": "",
+    "XDG_SESSION_ID": "4",
+    "USER": "paul",
+    "DESKTOP_SESSION": "i3",
+    "RBENV_SHELL": "bash",
+    "DEFAULTS_PATH": "/usr/share/gconf/i3.default.path",
+    "I3SOCK": "/run/user/1000/i3/ipc-socket.1746",
+    "PWD": "/home/paul/code/mal",
+    "HOME": "/home/paul",
+    "CONDA_PYTHON_EXE": "/home/paul/anaconda3/bin/python",
+    "SSH_AGENT_PID": "1834",
+    "QT_ACCESSIBILITY": "1",
+    "XDG_SESSION_TYPE": "x11",
+    "XDG_DATA_DIRS": "/usr/share/i3:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop",
+    "QSYS_ROOTDIR": "/opt/intelFPGA_lite/18.1/quartus/sopc_builder/bin",
+    "_CE_CONDA": "",
+    "XDG_SESSION_DESKTOP": "i3",
+    "DESKTOP_STARTUP_ID": "i3/urxvt/1746-12-paul-desktop_TIME84538198",
+    "GTK_MODULES": "gail:atk-bridge",
+    "_JAVA_OPTIONS": "-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel",
+    "WINDOWPATH": "2",
+    "TERM": "rxvt-unicode-256color",
+    "SHELL": "/bin/bash",
+    "NVM_BIN": "/home/paul/.nvm/versions/node/v12.14.0/bin",
+    "XDG_CURRENT_DESKTOP": "i3",
+    "GPG_AGENT_INFO": "/run/user/1000/gnupg/S.gpg-agent:0:1",
+    "COLORFGBG": "7;default",
+    "SHLVL": "1",
+    "XDG_SEAT": "seat0",
+    "WINDOWID": "73400330",
+    "GDMSESSION": "i3",
+    "LOGNAME": "paul",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "XAUTHORITY": "/run/user/1000/gdm/Xauthority",
+    "WASMTIME_HOME": "/home/paul/.wasmtime",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-i3:/etc/xdg",
+    "PATH": "/home/paul/.wasmtime/bin:/home/paul/anaconda3/condabin:/home/paul/.nvm/versions/node/v12.14.0/bin:/home/paul/.rbenv/plugins/ruby-build/bin:/home/paul/.rbenv/shims:/home/paul/.rbenv/bin:/home/paul/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin/intelFPGA_lite/18.1/quartus/bin/",
+    "NVM_INC": "/home/paul/.nvm/versions/node/v12.14.0/include/node",
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "OLDPWD": "/home/paul/code/mal/impls/pm-js",
+    "_": "/home/paul/.nvm/versions/node/v12.14.0/bin/node"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 63183,
+      "hard": 63183
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
