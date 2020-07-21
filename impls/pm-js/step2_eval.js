@@ -3,10 +3,10 @@ let r = require('./reader')
 let p = require('./printer')
 
 repl_env = {
-    '+': (a,b) => a+b,
-    '-': (a,b) => a-b,
-    '*': (a,b) => a*b,
-    '/': (a,b) => a/b,
+    '+': (...args) => args.reduce((a,c) => a+c),
+    '-': (...args) => args.reduce((a,c) => a-c),
+    '*': (...args) => args.reduce((a,c) => a*c),
+    '/': (...args) => args.reduce((a,c) => a/c),
 };
 
 function rep(input) {
